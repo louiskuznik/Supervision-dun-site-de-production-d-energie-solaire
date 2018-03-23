@@ -1,0 +1,167 @@
+@charset "ISO-8859-1";
+
+@font-face {
+    font-family: 'rift';
+    src: url('../Supervision_dun_site_de_production_dénergie_solaire/rift/fort_foundry_-_rift-regular-webfont.woff2') format('woff2'),
+         url('../Supervision_dun_site_de_production_dénergie_solaire/rift/fort_foundry_-_rift-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'alwyn';
+    src: url('../Supervision_dun_site_de_production_dénergie_solaire/alwyn/alwyn-webfont.woff2') format('woff2'),
+         url('../Supervision_dun_site_de_production_dénergie_solaire/alwyn/alwyn-webfont.woff') format('woff');
+}
+
+/* main background */
+
+body {
+  font-family: "alwyn", sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  background: #1b1f2a;
+  overflow: hidden; 
+}
+  
+input {
+	
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: normal;
+    font-size: 18px;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    transition: all 0.08s ease-in-out;
+    cursor: pointer;
+    color: white;
+    font-family: "alwyn";
+    height: 32px;
+    padding: 0;
+    width: 100%;
+    display: inline;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0,0,0,0);
+    outline: 0;
+    border-width: 0 0 1px 0;
+    transition: border-color 0.2s ease-in-out;
+    font-size: 16px;
+}
+  
+  
+.Bground_grid {
+  position: absolute;
+  background:url("../Supervision_dun_site_de_production_dénergie_solaire/Bground_grid.png");
+  left: 0;
+  right: 0;
+  background-size: 180px;
+  top: calc(63px - 180px);
+  bottom: 0;
+  background-repeat: repeat;
+  background-position: top center;
+  pointer-events: none;
+  z-index: -1; 
+}
+  
+.Bground_center {
+  position: absolute;
+  background:url("../Supervision_dun_site_de_production_dénergie_solaire/Bground_center.png");
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: center;
+  pointer-events: none;
+  z-index: -1;
+}  
+  
+/* boutons connexion/inscription */  
+   
+.button {
+  font-family: 'rift';
+  width: 240px;
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.6px;  
+}
+  
+.button_dashed-border {
+      border: 1.5px dotted transparent; 
+}
+      
+.button_dashed-border:hover {
+      color: #1b1f2a;
+      border-style: solid;
+      border-color: transparent;
+      background: #29b3eb;
+      background: -moz-linear-gradient(left, #29b3eb 0%, #21edba 100%);
+      background: -webkit-linear-gradient(left, #29b3eb 0%,#21edba 100%);
+      background: linear-gradient(to right, #29b3eb 0%,#21edba 100%);
+      background-size: calc(100% + 2px);
+      background-position: -1px;
+}
+      
+.button_medium {
+    height: 50px;
+    line-height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 30px; 
+    margin: 30px 3px 3px 3px;
+}
+
+.button_medium:visited {
+	color: #fff;
+}
+    
+.button_grey {
+      border-color: #909297; 
+}
+      
+.button_grey:hover {
+      color: #1b1f2a;
+      border-style: solid;
+      border-color: transparent;
+      background: #29b3eb;
+      background: -moz-linear-gradient(left, #29b3eb 0%, #21edba 100%);
+      background: -webkit-linear-gradient(left, #29b3eb 0%,#21edba 100%);
+      background: linear-gradient(to right, #29b3eb 0%,#21edba 100%);
+      background-size: calc(100% + 2px);
+      background-position: -1px;
+}
+    
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+    
+/* Pour centré le div des boutons */
+
+.button_center {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;    
+}
+
+.button_center a:visited {
+	color: #fff;
+}
+
