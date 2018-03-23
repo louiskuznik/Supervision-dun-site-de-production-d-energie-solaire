@@ -1,0 +1,426 @@
+@charset "ISO-8859-1";
+
+@font-face {
+    font-family: 'rift';
+    src: url('../Supervision_dun_site_de_production_dénergie_solaire/rift/fort_foundry_-_rift-regular-webfont.woff2') format('woff2'),
+         url('../Supervision_dun_site_de_production_dénergie_solaire/rift/fort_foundry_-_rift-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'alwyn';
+    src: url('../Supervision_dun_site_de_production_dénergie_solaire/alwyn/alwyn-webfont.woff2') format('woff2'),
+         url('../Supervision_dun_site_de_production_dénergie_solaire/alwyn/alwyn-webfont.woff') format('woff');
+}
+
+/* main background */
+
+body {
+  font-family: "alwyn", sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  background: #1b1f2a;
+  overflow: hidden; 
+}
+  
+input {
+	
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: normal;
+    font-size: 18px;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    transition: all 0.08s ease-in-out;
+    cursor: pointer;
+    color: white;
+    font-family: "alwyn";
+    height: 32px;
+    padding: 0;
+    width: 100%;
+    display: inline;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0,0,0,0);
+    outline: 0;
+    border-width: 0 0 1px 0;
+    transition: border-color 0.2s ease-in-out;
+    font-size: 16px;
+}
+  
+  
+.Bground_grid {
+  position: absolute;
+  background:url("../Supervision_dun_site_de_production_dénergie_solaire/Bground_grid.png");
+  left: 0;
+  right: 0;
+  background-size: 180px;
+  top: calc(63px - 180px);
+  bottom: 0;
+  background-repeat: repeat;
+  background-position: top center;
+  pointer-events: none;
+  z-index: -1; 
+}
+  
+.Bground_center {
+  position: absolute;
+  background:url("../Supervision_dun_site_de_production_dénergie_solaire/Bground_center.png");
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: center;
+  pointer-events: none;
+  z-index: -1;
+}  
+  
+/* boutons connexion/inscription */  
+   
+.button {
+  font-family: 'rift';
+  width: 240px;
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.6px;  
+}
+  
+.button_dashed-border {
+      border: 1.5px dotted transparent; 
+}
+      
+.button_dashed-border:hover {
+      color: #1b1f2a;
+      border-style: solid;
+      border-color: transparent;
+      background: #29b3eb;
+      background: -moz-linear-gradient(left, #29b3eb 0%, #21edba 100%);
+      background: -webkit-linear-gradient(left, #29b3eb 0%,#21edba 100%);
+      background: linear-gradient(to right, #29b3eb 0%,#21edba 100%);
+      background-size: calc(100% + 2px);
+      background-position: -1px;
+}
+      
+.button_medium {
+    height: 50px;
+    line-height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 30px; 
+    margin: 30px 3px 3px 3px;
+}
+
+.button_medium:visited {
+	color: #fff;
+}
+    
+.button_grey {
+      border-color: #909297; 
+}
+      
+.button_grey:hover {
+      color: #1b1f2a;
+      border-style: solid;
+      border-color: transparent;
+      background: #29b3eb;
+      background: -moz-linear-gradient(left, #29b3eb 0%, #21edba 100%);
+      background: -webkit-linear-gradient(left, #29b3eb 0%,#21edba 100%);
+      background: linear-gradient(to right, #29b3eb 0%,#21edba 100%);
+      background-size: calc(100% + 2px);
+      background-position: -1px;
+}
+    
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+    
+/* Pour centré le div des boutons */
+
+.button_center {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;    
+}
+
+.button_center a:visited {
+	color: #fff;
+}
+
+/* Boutton admin à droite */
+
+.button_admin {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  float: right;
+  top: 0;
+  right: 0;    
+}
+
+.button_admin a:visited {
+	color: #fff;
+}
+
+.button_adm {
+  font-family: 'rift';
+  width: 140px;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.6px;  
+}
+
+.button_size_admin {
+    height: 50px;
+    line-height: 64px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 30px; 
+    margin: 30px 30px 3px 3px;
+}
+
+.button_size_admin:visited {
+	color: #fff;
+}
+      
+/* modal login */
+
+* {
+    box-sizing: border-box;
+}
+
+.th-overlay {
+    z-index: 1100;
+    background-color: rgba(27, 31, 42, 0.95);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: pointer;
+    will-change: opacity;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.th-modal-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.th-elevation-1 {
+    z-index: 1501;
+}
+
+.th-modal {
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.09);
+  border-radius: 2px;
+  pointer-events: auto;
+  position: relative;
+}
+
+.login-modal, .logout-modal {
+	
+  background: rgba(41, 179, 235, 0.5);
+  background: -moz-linear-gradient(left, rgba(41, 179, 235, 0.5) 0%,rgba(33, 237, 186, 0.5) 100%);
+  background: -webkit-linear-gradient(left, rgba(41, 179, 235, 0.5) 0%,rgba(33, 237, 186, 0.5) 100%);
+  background: linear-gradient(to right, rgba(41, 179, 235, 0.5) 0%,rgba(33, 237, 186, 0.5) 100%);
+  padding: 9px;
+  width: 414px;
+}
+
+.login-modal_content {
+    background-color: rgba(27, 31, 42, 1.0);
+    padding-left: 26px;
+    padding-right: 26px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.login-modal_title, .logout-modal_title {
+    font-family: 'rift';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.th-form {
+    margin-top: 40px;
+}
+
+.th-form_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.th-form_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 10px;
+}
+  
+.th-form_input-title {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.input_underline {
+	margin-bottom: 34px;
+	font-weight: normal;
+    font-size: 14px;
+    font-family: "alwyn";
+    color: #8D8F95;
+}
+
+.input_underline:focus {
+    border-color: #21edba;
+}
+
+.input_underline:error{
+    border-color: #e82768;
+}
+
+.button_large {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 26px;
+}
+
+.button_large:visited {
+	color: rgba(27, 31, 42, 1.0);
+}
+
+.button_bg-gradient {
+    background: -moz-linear-gradient(left, #29b3eb 0%, #21edba 100%);
+    background: -webkit-linear-gradient(left, #29b3eb 0%,#21edba 100%);
+    background: linear-gradient(to right, #29b3eb 0%,#21edba 100%);
+    background-size: calc(100% + 2px);
+    background-position: -1px;
+    color: #1b1f2a;
+}
+
+.button_bg-gradient:hover {
+	box-shadow: 0 0 25px rgba(33, 237, 186, 0.5);
+}
+
+.action-button {
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 202px;
+}
+
+.login-modal__other-auth-message {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input_error {
+    border-color: #e82768 !important;
+    border-top-color: rgb(232, 39, 104);
+    border-right-color: rgb(232, 39, 104);
+    border-bottom-color: rgb(232, 39, 104);
+    border-left-color: rgb(232, 39, 104);
+}
+
+
+
+
+
+
+
+#fade {
+	display: none;
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .70;
+	z-index: 9999;
+}
+.popup_block{
+	display: none;
+	float: left;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+		
+}
+img.btn_close {
+	float: right;
+	
+	background-size: 16px 16px;
+	
+	margin: 5px 5px 0 0;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    z-index: 99999;
+}
+/*--Gérer la position fixed pour IE6--*/
+*html #fade {
+position: absolute;
+}
+*html .popup_block {
+position: absolute;
+}
